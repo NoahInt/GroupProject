@@ -1,0 +1,8 @@
+{% for destination in destinations %}
+    <a href="{% url 'destination_detail' destination.id %}">
+        <div>
+            <img src="{{ destination.image.url }}" alt="{{ destination.name }}">
+            <h3>{{ destination.name }}</h3>
+        </div>
+    </a>
+{% endfor %}
